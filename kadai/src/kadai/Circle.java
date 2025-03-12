@@ -14,6 +14,7 @@ public class Circle extends Shape{
 		this.radius = 0;
 	}
 	
+	//
 	/*
 	 * xとy...centerフィールドに代入するPoint型変数のx,y座標値
 	 * r..円の半径
