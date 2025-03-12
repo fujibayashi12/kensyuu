@@ -1,6 +1,5 @@
 package kadai;
 
-import java.awt.Rectangle;
 
 public class Square extends Rectangle{
 
@@ -15,7 +14,7 @@ public class Square extends Rectangle{
 	 */
 	public Square(int x,int y,int width){
 		super(x,y,width,width);
-		angle = 4;
+		
 		
 	}
 	/*
@@ -24,10 +23,10 @@ public class Square extends Rectangle{
 	 * "[正方形を描画] 点(0,0)を基準として幅・高さ200の正方形"
 	 */
 	public void draw() {
-		System.out.println("[正方形を描画] 点("+ x + ","+ y +")を基準として幅・高さ"+ width +"の正方形");
+		System.out.println("[正方形を描画] 点("+ p.getX() + ","+ p.getY() +")を基準として幅・高さ"+ width +"の正方形");
 	}
 	
-	public int getPerimeter() {
+	public double getPerimeter() {
 		return width * 4;
 	}
 	
